@@ -1,0 +1,722 @@
+/* =========================================== 
+    Project: Mansour Radmard Portfolio
+    ------------------------------------------
+    Theme
+    Fonts: Raleway & Open Sans,
+    font-family: 'Roboto', sans-serif;
+    ------------------------------------------
+    Colors:
+      Dark Silver     #50514F
+      Light Silver    #878E88
+      Orange          #F18F01
+      Khaki           #B2AA8E
+      Snow            #FFFCF9
+=========================================== */
+
+/* ===========================================
+    Global Styles 
+===========================================*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --darkSilver: #50514F;
+  --lightSliver: #878E88;
+  --orange: #F18F01;
+  --khaki: #B2AA8E;
+  --snow: #FFFCF9;
+  --footer-bg-color: #01161e;
+  --footer-color: #598392;
+  --html-logo: #e44d27;
+  --css-logo: #3495cf;
+  --js-logo: #f8dc3c;
+  --php-logo: #8a8bc1;
+  --laravel-logo: #f35045;
+  --git-logo: #F44C2B;
+  --sass-logo: #CF649A;
+  --less-logo: #563F7D;
+  --facebook-logo: #3A589B;
+  --twitter-logo: #1DA1F2;
+  --insta-logo: #B329A9;
+  --light-blue: #1c5165;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+.content-box-md {
+  padding: 100px 0;
+}
+
+.content-box-sm {
+  padding: 50px 0;
+}
+
+.heading-space-bottom {
+  margin-bottom: 30px;
+}
+
+.col-no-padding {
+  padding: 0px;
+}
+
+.row-space-bottom {
+  margin-bottom: 35px;
+}
+
+ .no-padding {
+  padding: 0;
+ }
+
+ a#tel-link,
+ a#email-link {
+  color: inherit
+ }
+
+ a#tel-link,
+ a#email-link {
+  color: inherit
+ }
+
+ a#tel-link:hover,
+ a#email-link:hover {
+   color: blue;
+   text-decoration: none;
+   transform: color 0.5 ease-in;
+ }
+
+/* ===========================================
+    Buttons 
+===========================================*/
+.submit-custom {
+  width: 100%;
+  background-color: var(--orange);
+  font-weight: 700;
+  border-radius: 0px;
+  text-transform: uppercase;
+  border: var(--lightSliver)
+}  
+
+/* ===========================================
+    Home section 
+===========================================*/
+section.home {
+  background:linear-gradient(0deg, rgba(47, 45, 37, 0.3), rgba(162, 97, 1, 0.3)),
+  url('../images/bg-img-9.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.jumbo-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+
+}
+
+.jumbotron {
+  background-color: transparent;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.jumbo-items {
+  font-size: 200%;
+  color: #fff;
+  font-weight: 700;
+}
+
+.jumbo-items > * {
+  display: inline-block;
+  background-color: #000;
+  padding: 5px 15px;
+}
+
+#jumbo-items-light-text {
+  font-weight: 500;
+  font-size: 70%;
+}
+
+#jumbo-items-ex-light-text {
+    font-size: 80%;
+    font-weight: 100;
+    background-color: transparent;
+}
+
+#jumbo-items-ex-light-text i {
+ color: #fff;
+}
+
+/* ===========================================
+    Nav-bar
+===========================================*/
+.nav-custom {
+  font-size: 120%;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+nav ul li.nav-item {
+  padding-right: 25px;
+}
+
+a.navbar-brand {
+  font-size: 180%;
+}
+
+.navbar-light .navbar-brand {
+  color: var(--orange)
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--orange);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--orange);
+}
+
+.bg-light {
+  background-color: #fffcf9 !important;
+  box-shadow: 0 8px 6px -9px #999;
+  z-index: 2;
+}
+
+/* ===========================================
+    Profile Section
+===========================================*/
+section.profile {
+  background-color: var(--snow)
+}
+
+.card-profile {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  border: 0 none;
+  border-radius: 15px;
+  /* display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column; */
+}
+
+div.profile-bg-img {
+  background-image: url("../images/bg-img-11.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-profile hr {
+  width: 55%;
+  margin-bottom: 15px;
+  border-top: 1px dotted var(--orange);
+  margin-top: 0px;
+}
+
+.profile-card-text {
+  padding: 45px 20px 20px 20px;
+}
+
+.profile-avatar {
+  max-width: 120px;
+  max-height: 120px;
+  margin: -60px auto 0;
+  border-radius: 50%;
+  border: 4px solid #FFFFFF;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.profile h3 {
+  font-size: 120%;
+  font-weight: 800;
+}
+
+.card-profile img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-profile h4 {
+  font-size: 100%;
+  margin-bottom: 15px;
+}
+
+.card-profile p {
+  padding: 0px 38px;
+}
+
+.profile-social-icons ul {
+  list-style: none;
+  padding: 0px;
+  font-size: 130%;
+}
+
+.profile-social-icons ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.card-profile i.fab.fa-github {
+  color: #000;
+}
+
+.card-profile i.fab.fa-twitter {
+  color: var(--twitter-logo)
+}
+
+.card-profile i.fab.fa-instagram {
+  color: var(--insta-logo)
+}
+
+.card-profile i.fab.fa-instagram {
+  color: var(--insta-logo)
+}
+
+div.card-contact {
+    font-size: 85%;
+    color: #768190;
+    margin-bottom: 20px;
+}
+
+div.profile-footer {
+  height: 70px;
+  border-radius: 0 0 15px 15px;
+  background-color: #042121;
+  display: table;
+  width: 100%;
+}
+
+div.p-footer-wrapper {
+display: table-cell;
+vertical-align: middle;
+}
+
+i.far.fa-user {
+  color: #989b9f;
+  font-size: 150%;
+}
+
+/* ===========================================
+    Skill Section
+===========================================*/
+.box-item {
+	background-color: #fff;
+	padding: 45px 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.box-item i {
+  font-size: 800%;
+  margin: 0px 0px 14px 0px;
+}
+
+.box-item h3 {
+  font-size: 200%;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.box-item hr {
+	width: 45px;
+	height: 3px;
+	background-color: var(--orange);
+	margin: 0 auto;
+	border: none;
+}
+
+.box-item p {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.stack-icons,
+.stack-icons i.fab.fa-html5,
+.stack-icons i.fab.fa-css3-alt,
+.stack-icons i.fab.fa-js,
+.stack-icons i.fab.fa-php,
+.stack-icons i.fab.fa-laravel,
+.stack-icons i.fab.fa-git,
+.stack-icons i.fab.fa-sass,
+.stack-icons i.fab.fa-less
+ {
+  color: #fff;
+  font-size: 45px;
+  text-shadow: 3px 6px #272634;
+}
+
+.skill-icons {
+  font-size: 500%;
+}
+
+i.fab.fa-html5 {
+  color: var(--html-logo);
+}
+
+i.fab.fa-css3-alt {
+  color: var(--css-logo);
+}
+
+i.fab.fa-js {
+  color: var(--js-logo);
+}
+
+i.fab.fa-php {
+  color: var(--php-logo);
+}
+
+i.fab.fa-laravel {
+  color: var(--laravel-logo);
+}
+
+i.fab.fa-git {
+  color: var(--git-logo);
+}
+
+i.fab.fa-sass {
+  color: var(--sass-logo);
+}
+
+i.fab.fa-less {
+  color: var(--less-logo);
+}
+
+/* ===========================================
+    Work section
+===========================================*/
+section.work {
+  background-color: #f9f5f5;
+}
+
+.work-item {
+  padding: 0px;
+  min-height: 100px;
+}
+
+.work-content {
+  min-height: 150px;
+}
+
+.work-title {
+  background-color: var(--light-blue);
+  padding: 1px;
+  font-weight: 800;
+  color: #fff;
+  font-size: 65%;
+}
+
+.work-title h1 {
+  font-weight: 800;
+}
+
+ .work-item i {
+  font-size: 109%;
+  margin: 0px;
+} 
+
+/* ===========================================
+    Learn section
+===========================================*/
+.learn-text {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  padding: 26px;
+  border-radius: 4px;
+  background-color: var(--snow);
+}
+
+.code-icon {
+  position: absolute;
+  bottom: -17%;
+  right: 7%;
+  font-size: 735%;
+  color: var(--light-blue);
+}
+
+/* ===========================================
+    Parallex section
+===========================================*/
+.parallex-img {
+   background:linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(125, 75, 0, 0.8)),
+   url('../images/bg-img-8.jpg');
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ===========================================
+    Create-profile section
+===========================================*/
+.create-profile-box h4 {
+  line-height: 5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+.create-profile-box {
+  background-color: #f9f5f5;
+  padding-left: 34px;
+  display: none;
+}
+
+.form-control.blue-line {
+  border-bottom: 1px dashed #1c5165;
+}
+
+#create-profile-form input#submit,
+#create-profile-form button#clear_data {
+  background-color: #005267;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#create-profile-form input#submit:hover {
+  background-color: var(--html-logo);
+  transition: background-color 0.5s ease-in;
+}
+
+#create-profile-form button#clear_data:hover {
+  background-color: var(--html-logo);
+  transition: background-color 0.5s ease-in;
+}
+
+/* ===========================================
+    Learn section
+===========================================*/
+.create-profile-box {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  padding: 26px;
+  border-radius: 4px;
+  min-height: 100%;
+}
+
+/* ===========================================
+    Contact section
+===========================================*/
+section.contact {
+  background-color: var(--snow)
+}
+
+ul.contact-details {
+  list-style: none;
+  padding: 0;
+}
+
+#contact-left p {
+  margin: 25px 0 20px 0;
+  font-weight: 500;
+}
+
+form h4 i.fas.fa-envelope {
+  font-size: 100%;
+  margin-right: 10px;
+}
+
+form button i.fab.fa-telegram-plane {
+   font-size: 100%;
+   margin-right: 10px;
+   margin-bottom: 0px;
+}
+/* ===========================================
+    Vertical Headings
+===========================================*/
+.vertical-heading h5 {
+  color: var(--orange);
+  font-size: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-spacing: 9px;
+  display: inline-block;
+  transform: rotate(-90deg);
+  position: relative;
+  top: 60px;
+  left: -63px;
+}
+
+.vertical-heading h2 {
+  margin: 0 0 0 35px;
+  font-size: 300%;
+  font-weight: 100;
+  line-height: 45px;
+  color: var(--light-blue);
+}
+
+h2 strong {
+  font-weight: 700;
+}
+
+#contact-title {
+  margin-bottom: 50px;
+}
+
+/* ===========================================
+    Form
+===========================================*/
+.form-control {
+  border: 0;
+  border-bottom: 1px solid var(--orange);
+  border-radius: 0;
+  line-height: 3.5;
+  padding-left: 0px;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: none;
+}
+
+form h4 {
+  color: var(--light-blue)
+}
+
+textarea {
+  margin-bottom: 25px;
+}
+
+/* ===========================================
+    Nav-bar Bottom
+===========================================*/
+.nav-bottom {
+  background-color: #495057;
+}
+
+.nav-bottom ul {
+  list-style: none;
+  margin-bottom: 0px;
+  padding: 15px;
+}
+
+.nav-bottom ul li {
+  display: inline-block;
+  padding-right: 50px; 
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* ===========================================
+    Footer
+===========================================*/
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--snow);
+}
+
+footer h3 {
+  margin-top: 0px;
+  margin-bottom: 25px;
+  font-size: 140%;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0px
+}
+
+footer ul li {
+  margin-bottom: 10px;
+  font-size: 90%;
+  font-weight: 100;
+}
+
+footer hr {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin: 0px 0px 10px 0px;
+  border: none;
+}
+
+#contact-left ul.social-list.footer-s li a {
+  color: var(--snow);
+  border: 1px solid #598392;
+  text-align: center;
+}
+
+ul.social-list {
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul.social-list li {
+  display: inline-block;
+  padding: 0;
+}
+
+#contact-left ul.social-list.footer-s li a {
+  color: var(--snow);
+  border: 1px solid var(--snow);
+  text-align: center;
+}
+
+ul.social-list li a {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  line-height: 35px;
+  border-radius: 50%;
+
+}
+
+/* ===========================================
+    Animations
+===========================================*/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6,
+.js--wp-7 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated,
+.js--wp-5.animated,
+.js--wp-6.animated,
+.js--wp-7.animated {
+  opacity: 1;
+}
+
+
+
